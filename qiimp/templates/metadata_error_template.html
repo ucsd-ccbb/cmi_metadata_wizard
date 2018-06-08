@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>QIIMP Error</title>
-    <link href="{{ static_url("third-party/favicon.ico") }}" rel="icon" type="image/x-icon" />
+    <link href="static/third-party/favicon.ico" rel="icon" type="image/x-icon" />
     <!--Below included for consistency with Qiita "look"-->
-    <link rel="stylesheet" href="{{ static_url("third-party/jquery-ui-1.12.1/jquery-ui.min.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ static_url("third-party/jquery-ui-1.12.1/jquery-ui.structure.min.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ static_url("third-party/jquery-ui-1.12.1/jquery-ui.theme.min.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ static_url("third-party/bootstrap-3.3.7-dist/css/bootstrap.min.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ static_url("third-party/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css") }}" type="text/css">
+    <link rel="stylesheet" href="static/third-party/jquery-ui-1.12.1/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="static/third-party/jquery-ui-1.12.1/jquery-ui.structure.min.css" type="text/css">
+    <link rel="stylesheet" href="static/third-party/jquery-ui-1.12.1/jquery-ui.theme.min.css" type="text/css">
+    <link rel="stylesheet" href="static/third-party/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="static/third-party/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" type="text/css">
 </head>
 <body>
     <div class="container" id="container">
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <pre>
-{{ error_trace }}
+                  {{ error_trace }}
                 </pre>
             </div>
         </div>

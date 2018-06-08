@@ -208,7 +208,8 @@ class MetadataWizardState(object):
 
         self.use_ssl = bool(self.certificate_file and self.key_file)
         self.protocol = "https" if self.use_ssl else "http"
-        if self.static_path == "": self.static_path = self.install_dir
+        if self.static_path == "" or self.static_path is None:
+            self.static_path = self.install_dir + '/static/'
 
         self.main_url = "{0}:{1}".format(self.websocket_url, self.listen_port)
         self.static_url_prefix = self._get_url(self.static_url_folder)
@@ -253,7 +254,6 @@ class MetadataWizardState(object):
         config_parser = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
         config_parser.read_file(open(os.path.join(self.settings_dir_path, 'config.txt')))
 
-        self.static_path = os.path.expanduser(config_parser.get(section_name, "static_path"))
         self.url_subfolder = config_parser.get(section_name, "url_subfolder")
         self.static_url_folder = config_parser.get(section_name, "static_url_folder")
         self.listen_port = os.path.expanduser(config_parser.get(section_name, "listen_port"))

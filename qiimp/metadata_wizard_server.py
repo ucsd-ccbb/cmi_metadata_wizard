@@ -360,17 +360,17 @@ def main():
     wizard_state.set_env_and_sampletype_infos(env_and_sampletype_infos)
 
     settings = {
-        "static_path": wizard_state.static_path,
-        "static_url_prefix": wizard_state.static_url_prefix,
         "template_path": wizard_state.templates_dir_path,
         "wizard_state": wizard_state,
     }
 
+    print (re.escape(wizard_state.partial_upload_url))
     application = tornado.web.Application([
         (r"/", MainHandler),
         (re.escape(wizard_state.partial_download_url) + r"/([^/]+)", DownloadHandler),
         (re.escape(wizard_state.partial_upload_url) +  r"$", UploadHandler),
-        (re.escape(wizard_state.partial_package_url) + r"$", PackageHandler)
+        (re.escape(wizard_state.partial_package_url) + r"$", PackageHandler),
+        (r"/static/(.*)", tornado.web.StaticFileHandler, {"path": wizard_state.static_path}),
     ], **settings)
 
     ssl_options = None
