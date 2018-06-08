@@ -2,8 +2,8 @@
 url_subfolder: /qiimp
 static_path:
 static_url_folder: /static/
-websocket_url: 
-listen_port: 8183
+websocket_url: localhost
+listen_port: 8381
 
 # Webserver certificate file paths;
 # Empty paths indicate program should use http instead of https.

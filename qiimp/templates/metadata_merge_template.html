@@ -22,17 +22,17 @@
     <!-- Bootstrap styles -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!-- Generic page styles -->
-    <link rel="stylesheet" href="{{ static_url("third-party/jQuery-File-Upload-9.19.2/css/style.css") }}">
+    <link rel="stylesheet" href="static/third-party/jQuery-File-Upload-9.19.2/css/style.css">
     <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
-    <link rel="stylesheet" href="{{ static_url("third-party/jQuery-File-Upload-9.19.2/css/jquery.fileupload.css") }}">
-    <link rel="stylesheet" href="{{ static_url("third-party/jQuery-File-Upload-9.19.2/css/jquery.fileupload-ui.css") }}">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="{{ static_url("third-party/microbiome/css/bootstrap.css") }}" rel="stylesheet" />
-    <link href="{{ static_url("third-party/microbiome/css/screen.css") }}" rel="stylesheet" />
+    <link rel="stylesheet" href="static/third-party/jQuery-File-Upload-9.19.2/css/jquery.fileupload.css">
+    <link rel="stylesheet" href="static/third-party/jQuery-File-Upload-9.19.2/css/jquery.fileupload-ui.css">
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+	  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="static/third-party/microbiome/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/third-party/microbiome/css/screen.css" rel="stylesheet" />
     <style type="text/css">
         .wizard_logo {
-            background: url({{ static_url("third-party/microbiome/img/logo-microbiome.png") }}) no-repeat center center;
+            background: url("static/third-party/microbiome/img/logo-microbiome.png") no-repeat center center;
             display: inline-block;
             width: 100px;
             height: 100px;
@@ -168,23 +168,23 @@
     </tr>
 {%! } %}
 </script>
-<script src={{ static_url("third-party/jquery-3.2.1.min.js") }}></script>
+<script src="static/third-party/jquery-3.2.1.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/vendor/jquery.ui.widget.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/vendor/jquery.ui.widget.js"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
-<script src="{{ static_url("third-party//tmpl.min.js") }}"></script>
+<script src="static/third-party//tmpl.min.js"></script>
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/jquery.iframe-transport.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload.js"></script>
 <!-- The File Upload processing plugin -->
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload-process.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload-process.js"></script>
 <!-- The File Upload validation plugin -->
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload-validate.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload-validate.js"></script>
 <!-- The File Upload user interface plugin -->
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload-ui.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/jquery.fileupload-ui.js"></script>
 <!-- The main application script -->
 <script type="text/javascript">
 /*
@@ -263,7 +263,7 @@ $(function () {
 </script>
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
 <!--[if (gte IE 8)&(lt IE 10)]>
-<script src="{{ static_url("third-party/jQuery-File-Upload-9.19.2/js/cors/jquery.xdr-transport.js") }}"></script>
+<script src="static/third-party/jQuery-File-Upload-9.19.2/js/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
 </body>
 </html>
